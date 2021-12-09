@@ -1,10 +1,3 @@
-/*
-Last edited 12/7/21 William Field for Theory of Database Management Systems
-
-This file uses the Google Maps javascript API to create a map of summer meal locations in Washington, DC. summer_meals is a sql database
-containing data from https://opendata.dc.gov/datasets/DCGIS::summer-meals-sites/about
-
-*/
 
 <?php 
   $dsn = "mysql:host=localhost;dbname=summer_meals";
@@ -89,7 +82,14 @@ containing data from https://opendata.dc.gov/datasets/DCGIS::summer-meals-sites/
 		show(3, true, d);//making markers for all locations open at the desired time
 		});
 	});
-	
+	/*
+		Last edited 12/7/21 William Field for Theory of Database Management Systems
+
+		This file uses the Google Maps javascript API to create a map of summer meal locations in Washington, DC. summer_meals is a sql database
+		containing data from https://opendata.dc.gov/datasets/DCGIS::summer-meals-sites/about
+
+	*/
+
 	const locations = <?php echo $locations; ?>;//taking in our location objects from server to frontend
 		
 	let map;
