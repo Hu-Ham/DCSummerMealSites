@@ -1,4 +1,3 @@
-
 <?php 
   $dsn = "mysql:host=localhost;dbname=summer_meals";
   $username = "root";
